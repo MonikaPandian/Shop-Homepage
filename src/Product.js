@@ -6,16 +6,15 @@ import './App.css';
 
    
   const Product=()=>{  
-
-   
-
        
     const [cart, setCart] = useState(0);
-   
 
-
-    
-
+    function increment(){
+        setCart(cart+1)
+    }
+    function decrement(){
+        setCart(cart-1)
+    }
     return (
         <div>
             <Navbar cartMain={cart} />
@@ -70,12 +69,12 @@ import './App.css';
                                 <div className="card-footer p-4 pt-0 border-top-0 bg-transparent">
                                     <div className="text-center">
                                         
-                                        <div id="division" style={{display:"block"}}>
+                                        
                                             <a className="btn btn-outline-dark mt-auto" href="#" 
-                                            onClick={increment}>Add to cart</a></div>
-                                        <div style={{display:"block"}}>
+                                            onClick={increment}>Add to cart</a>
+                                        
                                             <a className="btn btn-outline-dark mt-auto" href="#"  
-                                            onClick={decrement}>Remove from cart</a></div>
+                                            onClick={decrement}>Remove from cart</a>
 
                                     </div>
                                 </div>
@@ -99,7 +98,13 @@ import './App.css';
                                 </div>
                                 {/* <!-- Product actions--> */}
                                 <div className="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                    <div className="text-center"><a className="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                                    <div className="text-center">
+                                    <a className="btn btn-outline-dark mt-auto" href="#" 
+                                            onClick={increment}>Add to cart</a>
+                                        
+                                            <a className="btn btn-outline-dark mt-auto" href="#"  
+                                            onClick={decrement}>Remove from cart</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -126,7 +131,13 @@ import './App.css';
                                 </div>
                                 {/* <!-- Product actions--> */}
                                 <div className="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                    <div className="text-center"><a className="btn btn-outline-dark mt-auto" href="#" onClick="">Add to cart</a></div>
+                                    <div className="text-center">
+                                    <a className="btn btn-outline-dark mt-auto" href="#" 
+                                            onClick={increment}>Add to cart</a>
+                                        
+                                            <a className="btn btn-outline-dark mt-auto" href="#"  
+                                            onClick={decrement}>Remove from cart</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -148,7 +159,13 @@ import './App.css';
                                 </div>
                                 {/* <!-- Product actions--> */}
                                 <div className="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                    <div className="text-center"><a className="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                                    <div className="text-center">
+                                    <a className="btn btn-outline-dark mt-auto" href="#" 
+                                            onClick={increment}>Add to cart</a>
+                                        
+                                            <a className="btn btn-outline-dark mt-auto" href="#"  
+                                            onClick={decrement}>Remove from cart</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -167,7 +184,9 @@ import './App.css';
                                 </div>
                                 {/* <!-- Product actions--> */}
                                 <div className="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                    <div className="text-center"><a className="btn btn-outline-dark mt-auto" href="#">View options</a></div>
+                                    <div className="text-center">
+                                        <a className="btn btn-outline-dark mt-auto" href="#">View options</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -197,7 +216,13 @@ import './App.css';
                                 </div>
                                 {/* <!-- Product actions--> */}
                                 <div className="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                    <div className="text-center"><a className="btn btn-outline-dark mt-auto" href="#" onClick="">Add to cart</a></div>
+                                    <div className="text-center">
+                                    <a className="btn btn-outline-dark mt-auto" href="#" 
+                                            onClick={increment}>Add to cart</a>
+                                        
+                                            <a className="btn btn-outline-dark mt-auto" href="#"  
+                                            onClick={decrement}>Remove from cart</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -224,7 +249,13 @@ import './App.css';
                                 </div>
                                 {/* <!-- Product actions--> */}
                                 <div className="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                    <div className="text-center"><a className="btn btn-outline-dark mt-auto" href="#" onClick="">Add to cart</a></div>
+                                    <div className="text-center">
+                                    <a className="btn btn-outline-dark mt-auto" href="#" 
+                                            onClick={increment}>Add to cart</a>
+                                        
+                                            <a className="btn btn-outline-dark mt-auto" href="#"  
+                                            onClick={decrement}>Remove from cart</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
