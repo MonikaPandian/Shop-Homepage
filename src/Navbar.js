@@ -1,6 +1,6 @@
 import React from "react";
 
-const Navbar = (props) => {
+const Navbar = ({cartMain}) => {
     return (
         <div>
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -25,7 +25,7 @@ const Navbar = (props) => {
                             <button className="btn btn-outline-dark" type="submit">
                                 <i className="bi-cart-fill me-1"></i>
                                 Cart
-                                <span className="badge bg-dark text-white ms-1 rounded-pill">{props.count}</span>
+                                <span className="badge bg-dark text-white ms-1 rounded-pill">{cartMain}</span>
                             </button>
                         </form>
                     </div>
