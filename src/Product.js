@@ -4,18 +4,17 @@ import Navbar from './Navbar';
 import Header from './Header';
 import './App.css';
 
+   
+  const Product=()=>{  
 
-const Product = () => {
+   
+
+       
     const [cart, setCart] = useState(0);
    
 
-    function increment() {
-        setCart(cart + 1 )
-    }
 
-    function decrement() {
-        setCart(cart - 1 )
-    }
+    
 
     return (
         <div>
@@ -70,7 +69,14 @@ const Product = () => {
                                 {/* <!-- Product actions--> */}
                                 <div className="card-footer p-4 pt-0 border-top-0 bg-transparent">
                                     <div className="text-center">
-                                        <a className="btn btn-outline-dark mt-auto" href="#" onClick={increment}>Add to cart</a>
+                                        
+                                        <div id="division" style={{display:"block"}}>
+                                            <a className="btn btn-outline-dark mt-auto" href="#" 
+                                            onClick={increment}>Add to cart</a></div>
+                                        <div style={{display:"block"}}>
+                                            <a className="btn btn-outline-dark mt-auto" href="#"  
+                                            onClick={decrement}>Remove from cart</a></div>
+
                                     </div>
                                 </div>
                             </div>
@@ -230,7 +236,7 @@ const Product = () => {
 }
 export default Product;
 
-{/* <div className="justify-content-center rate">
+/* <div className="justify-content-center rate">
                                             <input type="radio" id="star1" name="rate" value="1" />
                                             <label for="star1" title="text">1 star</label>
                                             <input type="radio" id="star2" name="rate" value="2" />
@@ -241,4 +247,4 @@ export default Product;
                                             <label for="star4" title="text">4 stars</label>
                                             <input type="radio" id="star5" name="rate" value="5" />
                                             <label for="star5" title="text">5 stars</label>
-                                        </div> */}
+                                        </div> */
