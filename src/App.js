@@ -1,16 +1,13 @@
-// import Product from './Product';
-// import Footer from './Footer';
-
+import React from 'react';
+import Footer from './Footer';
 import Product from "./Product";
-
-
 
 function App() {  
 
   return (
     <div>      
-    <Product/>
-
+    <Product/>    
+    <Footer/>
     </div>
   );
 }
