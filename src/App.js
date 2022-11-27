@@ -1,15 +1,21 @@
-import React from 'react';
-import Footer from './Footer';
-import Product from "./Product";
+import Navbar from "./Navbar";
+import Header from "./Header";
+import Section from "./Section";
+import Footer from "./Footer";
+import "./App.css";
+import {useState} from "react";
 
-function App() {  
+const App = () => {
+  const [cartCount, setCartCount] = useState(0);
 
   return (
-    <div>      
-    <Product/>    
-    <Footer/>
+    <div className="App">
+      <Navbar cartCount={cartCount} setCartCount={setCartCount}/>
+      <Header/>
+      <Section cartCount={cartCount} setCartCount={setCartCount}/>
+      <Footer/>
     </div>
-  );
+  )
 }
 
 export default App;
